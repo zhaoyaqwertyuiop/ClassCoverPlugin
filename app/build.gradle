@@ -1,0 +1,70 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+apply plugin: ClassCoverPlugin
+apply plugin: SimplePlugin
+apply from: rootProject.file('buildSrc/gradle_plugin_maven_publishing.gradle')
+
+android {
+    namespace 'com.zy.transform'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.zy.transform"
+        minSdk 19
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.8.0'
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'com.google.android.material:material:1.5.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+
+
+    implementation 'com.blankj:utilcodex:1.31.1'
+    implementation("com.github.PhilJay:MPAndroidChart:v3.0.3")
+}
+
+//afterEvaluate {
+//    println "afterEvaluta start"
+//    android.applicationVariants.all { variant ->
+//        String variantName = variant.name.capitalize()
+//        def mergeDexTask = project.tasks.findByName("mergeDex$variantName")
+//        mergeDexTask.doFirst {
+//            println "mergeDexTask.doFirst"
+//            println mergeDexTask.temporaryDir
+//            println mergeDexTask.name
+//            println mergeDexTask.actions
+//
+//            try {
+//                DexFileUtil.loadDexFile(variantOutput.getOutputFile().getAbsolutePath(), api != null ? api : 25)
+//            } catch(e){
+//                println "catch mergeDexTask.dependsOn(): $e"
+//            }
+//        }
+//    }
+//}

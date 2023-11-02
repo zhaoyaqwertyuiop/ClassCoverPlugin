@@ -1,0 +1,43 @@
+apply plugin: 'maven-publish' // 添加这一行
+
+repositories{
+    google()
+    mavenCentral()
+
+    maven { url "https://457641462.github.io/ClassCoverPlugin" }
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            groupId 'com.zy' // 替换为你的组织或项目组名
+            artifactId 'ClassCoverPlugin' // 替换为你的构件ID
+            version '1.0.0' // 替换为你的版本号
+
+//            def projectName = project.getName()
+////            artifact "build/outputs/aar/module_common-release.aar"//对应该渠道打包出来的aar所在的目录（如何打包请往下看）
+//            artifact "build/outputs/aar/ClassCoverPlugin.aar"//对应该渠道打包出来的aar所在的目录（如何打包请往下看）
+//            pom.withXml{
+//                def dependenciesNode = asNode().appendNode("dependencies")
+//                configurations.implementation.allDependencies.forEach(){
+//                    Dependency dependency ->
+//                        if (dependency.version != "unspecified" && dependency.name != "unspecified"){
+//                            def dependencyNode = dependenciesNode.appendNode('dependency')
+//                            dependencyNode.appendNode('groupId', dependency.group)
+//                            dependencyNode.appendNode('artifactId', dependency.name)
+//                            dependencyNode.appendNode('version', dependency.version)
+//                        }
+//                }
+//            }
+        }
+    }
+    repositories {
+        maven {
+            url "https://457641462.github.io/ClassCoverPlugin"
+            credentials {
+                username "457641462"
+                password "zyty201507280126"
+            }
+        }
+    }
+}

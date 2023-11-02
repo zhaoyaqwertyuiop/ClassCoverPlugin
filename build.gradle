@@ -1,0 +1,38 @@
+// 7.0之后
+//plugins {
+//    id 'com.android.application' version '8.0.2' apply false
+//    id 'com.android.library' version '8.0.2' apply false
+//    id 'org.jetbrains.kotlin.android' version '1.8.20' apply false
+//}
+
+// 7.0之前
+buildscript {
+    ext {
+        kotlin_version = '1.6.20'
+    }
+    repositories {
+        google()
+        maven { url 'https://depend.iflytek.com/artifactory/mvn-repo/' }
+        maven { url 'https://maven.aliyun.com/nexus/content/groups/public/' }
+        maven { url 'https://jitpack.io' }
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.2.2'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        maven { url 'https://maven.aliyun.com/nexus/content/groups/public/' }
+        maven { url 'https://jitpack.io' }
+        mavenCentral()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
