@@ -21,7 +21,7 @@ repositories{
 
 publishing {
     publications {
-        mavenJava(MavenPublication) {
+        maven(MavenPublication) {
             from components.java
             groupId 'com.zy' // 替换为你的组织或项目组名
             artifactId 'ClassCoverPlugin' // 替换为你的构件ID
@@ -48,8 +48,8 @@ publishing {
         maven {
             url "https://457641462.github.io/ClassCoverPlugin"
             credentials {
-                username "457641462"
-                password "zyty201507280126"
+                username ""
+                password ""
             }
         }
     }
