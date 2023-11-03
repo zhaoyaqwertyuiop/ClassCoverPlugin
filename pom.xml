@@ -1,0 +1,9 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.zy</groupId>
+    <artifactId>ClassCoverPlugin</artifactId>
+    <version>1.0.0</version>
+    <dependencies>
+        <!-- 添加其他依赖项 -->
+    </dependencies>
+</project>
