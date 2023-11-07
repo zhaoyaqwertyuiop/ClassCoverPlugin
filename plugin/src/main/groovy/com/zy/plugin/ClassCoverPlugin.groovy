@@ -1,9 +1,13 @@
+package com.zy.plugin
+
 import com.android.build.api.transform.*
-import com.android.build.gradle.internal.pipeline.TransformManager
+import com.android.build.api.transform.QualifiedContent.ContentType
+import com.android.build.api.transform.QualifiedContent.Scope
 import com.android.build.gradle.AppExtension
-import org.apache.commons.io.FileUtils
+import com.android.build.gradle.internal.pipeline.TransformManager
 import com.google.gson.Gson
 import org.apache.commons.codec.digest.DigestUtils
+import org.apache.commons.io.FileUtils
 import org.apache.commons.io.IOUtils
 import org.gradle.api.Plugin
 import org.gradle.api.Project
@@ -66,12 +70,12 @@ class ClassCoverPlugin extends Transform implements Plugin<Project> {
     }
 
     @Override
-    Set<QualifiedContent.ContentType> getInputTypes() {
+    Set<ContentType> getInputTypes() {
         return TransformManager.CONTENT_CLASS
     }
 
     @Override
-    Set<? super QualifiedContent.Scope> getScopes() {
+    Set<? super Scope> getScopes() {
         return TransformManager.SCOPE_FULL_PROJECT
     }
 

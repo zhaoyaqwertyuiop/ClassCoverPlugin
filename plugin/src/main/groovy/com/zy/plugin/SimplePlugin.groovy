@@ -1,4 +1,8 @@
+package com.zy.plugin
+
 import com.android.build.api.transform.*
+import com.android.build.api.transform.QualifiedContent.ContentType
+import com.android.build.api.transform.QualifiedContent.Scope
 import com.android.build.gradle.AppExtension
 import com.android.build.gradle.internal.pipeline.TransformManager
 import org.apache.commons.io.FileUtils
@@ -35,7 +39,7 @@ class SimplePlugin extends Transform implements Plugin<Project> {
     //需要处理的数据类型，有两种枚举类型
     //CLASSES和RESOURCES，CLASSES代表处理的java的class文件，RESOURCES代表要处理java的资源
     @Override
-    Set<QualifiedContent.ContentType> getInputTypes() {
+    Set<ContentType> getInputTypes() {
         return TransformManager.CONTENT_CLASS
     }
 
@@ -49,7 +53,7 @@ class SimplePlugin extends Transform implements Plugin<Project> {
     //    SUB_PROJECTS_LOCAL_DEPS   只有子项目的本地依赖项(本地jar)。
     //    TESTED_CODE                   由当前变量(包括依赖项)测试的代码
     @Override
-    Set<? super QualifiedContent.Scope> getScopes() {
+    Set<? super Scope> getScopes() {
         return TransformManager.SCOPE_FULL_PROJECT
     }
 
@@ -317,22 +321,22 @@ class SimplePlugin extends Transform implements Plugin<Project> {
                     if (isInject()) {
                         println("onMethodEnter(): ${className}.${name}")
                         if ("onCreate".equals(name)) {
-                            mv.visitVarInsn(ALOAD, 0);
-                            mv.visitMethodInsn(INVOKESTATIC,
+                            mv.visitVarInsn(org.objectweb.asm.Opcodes.ALOAD, 0);
+                            mv.visitMethodInsn(org.objectweb.asm.Opcodes.INVOKESTATIC,
                                     "com/zy/transform/ASMTestUtil",
                                     "onCreateLog", "(Landroid/app/Activity;)V",
                                     false);
                         } else if ("onDestroy".equals(name)) {
-                            mv.visitVarInsn(ALOAD, 0);
-                            mv.visitMethodInsn(INVOKESTATIC, "com/zy/transform/ASMTestUtil",
+                            mv.visitVarInsn(org.objectweb.asm.Opcodes.ALOAD, 0);
+                            mv.visitMethodInsn(org.objectweb.asm.Opcodes.INVOKESTATIC, "com/zy/transform/ASMTestUtil",
                                     "onDestoryLog", "(Landroid/app/Activity;)V", false);
                         } else if ("onStart".equals(name)) {
-                            mv.visitVarInsn(ALOAD, 0);
-                            mv.visitMethodInsn(INVOKESTATIC, "com/zy/transform/ASMTestUtil",
+                            mv.visitVarInsn(org.objectweb.asm.Opcodes.ALOAD, 0);
+                            mv.visitMethodInsn(org.objectweb.asm.Opcodes.INVOKESTATIC, "com/zy/transform/ASMTestUtil",
                                     "onStartLog", "(Landroid/app/Activity;)V", false);
                         } else if ("onStop".equals(name)) {
-                            mv.visitVarInsn(ALOAD, 0);
-                            mv.visitMethodInsn(INVOKESTATIC, "com/zy/transform/ASMTestUtil",
+                            mv.visitVarInsn(org.objectweb.asm.Opcodes.ALOAD, 0);
+                            mv.visitMethodInsn(org.objectweb.asm.Opcodes.INVOKESTATIC, "com/zy/transform/ASMTestUtil",
                                     "onStopLog", "(Landroid/app/Activity;)V", false);
                         }
                     }

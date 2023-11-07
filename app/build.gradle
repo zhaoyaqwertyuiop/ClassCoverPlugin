@@ -1,10 +1,10 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+//    id 'com.zy.plugin'
+    id 'ClassCoverPlugin'
+//    id 'test_plugin'
 }
-apply plugin: ClassCoverPlugin
-apply plugin: SimplePlugin
-apply from: rootProject.file('buildSrc/gradle_plugin_maven_publishing.gradle')
 
 android {
     namespace 'com.zy.transform'
@@ -47,6 +47,7 @@ dependencies {
 
     implementation 'com.blankj:utilcodex:1.31.1'
     implementation("com.github.PhilJay:MPAndroidChart:v3.0.3")
+//    implementation 'com.zy.plugin:ClassCoverPlugin:0.0.4'
 }
 
 //afterEvaluate {

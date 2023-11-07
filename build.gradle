@@ -12,15 +12,18 @@ buildscript {
     }
     repositories {
         google()
-        maven { url 'https://depend.iflytek.com/artifactory/mvn-repo/' }
         maven { url 'https://maven.aliyun.com/nexus/content/groups/public/' }
         maven { url 'https://jitpack.io' }
         mavenCentral()
+        mavenLocal() // 本地仓库
+//        maven { url "$rootDir/repo" }
+//        maven { url uri("$rootDir/repo") }
     }
 
     dependencies {
         classpath 'com.android.tools.build:gradle:4.2.2'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "com.zy.plugin:ClassCoverPlugin:1.0.3" // 这里是本地插件
     }
 }
 
@@ -30,6 +33,10 @@ allprojects {
         maven { url 'https://maven.aliyun.com/nexus/content/groups/public/' }
         maven { url 'https://jitpack.io' }
         mavenCentral()
+        mavenLocal() // 本地仓库
+//        maven { url "$rootDir/repo" }
+//        maven { url uri("$rootDir/repo") }
+//        maven { url "file://$rootDir/repo" }
     }
 }
 
