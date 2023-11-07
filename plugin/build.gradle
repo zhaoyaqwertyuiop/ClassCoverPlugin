@@ -42,7 +42,7 @@ publishing {
             groupId = 'com.zy.plugin'
             // 插件的名字，后续在引用时会用到
             artifactId = 'ClassCoverPlugin'
-            version = '1.0.3'
+            version = '1.0.0'
             // 组件类型
             from components.java
 

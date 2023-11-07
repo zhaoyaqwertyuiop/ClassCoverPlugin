@@ -17,6 +17,6 @@
 //    }
 //}
 
-rootProject.name = "TransformDemo"
+rootProject.name = "Plugins"
 include ':app'
 include ':plugin'
