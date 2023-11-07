@@ -20,8 +20,10 @@ gradlePlugin {
         standaloneGradlePlugins {
 //            id = 'test_plugin'
 //            implementationClass = 'com.example.test_plugin.MyPlugin'
-            id = 'ClassCoverPlugin'
-            implementationClass = 'com.zy.plugin.ClassCoverPlugin'
+//            id = 'ClassCoverPlugin'
+//            implementationClass = 'com.zy.plugin.ClassCoverPlugin'
+            id = 'SimplePlugin'
+            implementationClass = 'com.zy.plugin.SimplePlugin'
         }
     }
 }
@@ -41,7 +43,7 @@ publishing {
             // 插件的组ID，建议设置为插件的包名
             groupId = 'com.zy.plugin'
             // 插件的名字，后续在引用时会用到
-            artifactId = 'ClassCoverPlugin'
+            artifactId = 'SimplePlugin'
             version = '1.0.0'
             // 组件类型
             from components.java
