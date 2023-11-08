@@ -15,11 +15,11 @@ dependencies{
     implementation 'org.apache.directory.studio:org.apache.commons.codec:1.8'
 }
 
-def pluginName = "ClassCoverPlugin"
-def pluginVersion = "1.0.0"
-
-//def pluginName = "SimplePlugin"
+//def pluginName = "ClassCoverPlugin"
 //def pluginVersion = "1.0.0"
+
+def pluginName = "SimplePlugin"
+def pluginVersion = "1.0.0"
 
 gradlePlugin {
     plugins {
