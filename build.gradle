@@ -26,7 +26,7 @@ buildscript {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
 //        classpath "com.zy.plugin:ClassCoverPlugin:1.0.3" // 这里是本地插件
 //        classpath "com.zy.plugin:SimplePlugin:1.0.0" // 这里是本地插件
-//        classpath "com.github.zhaoyaqwertyuiop:Plugins:1.0.0"
+//        classpath "com.github.zhaoyaqwertyuiop:Plugins:v0.0.1"
     }
 }
 
