@@ -11,7 +11,7 @@
   "createdBy": {
     "gradle": {
       "version": "6.7.1",
-      "buildId": "6thsmghtcveurjdqodq7kh6nu4"
+      "buildId": "rkdp3npoyrbf3ekjbp6bevrbxu"
     }
   },
   "variants": [
@@ -29,10 +29,10 @@
           "name": "ClassCoverPlugin-1.0.0.jar",
           "url": "ClassCoverPlugin-1.0.0.jar",
           "size": 38382,
-          "sha512": "d4e7933c5e357b9ffdf75665c87313475423cb6ef5209109631d4dcba90dab1d391226b45b09941077eadb7978dc36438537463ebfe57e14c5e4e9bf1961390b",
-          "sha256": "b2372de24b6d096a63470e7c291c5bb1005371000e92637cfb3dbd79d7ee33f9",
-          "sha1": "969e44487d22bcd2a38c84e03c6c374b8150a6de",
-          "md5": "02b0e451b6707d7933bb4a76b2fb6234"
+          "sha512": "e106f55d522572d910c070d5ab906914f997e260d7a7c771cf577f736af4a29db195e95569021f2416ef482cc5bcc23d276ea3f657d6b9b04bde97b1cf6d638d",
+          "sha256": "53c08142754fd86a21449149f07fba4d6f9e50f520461a9fb5cc76a6fb1b2eee",
+          "sha1": "fc7ced7885d114a6c74ba1bda761547d6112cf04",
+          "md5": "8b39e54126ac06b1ecf6a45e4a329025"
         }
       ]
     },
@@ -80,10 +80,10 @@
           "name": "ClassCoverPlugin-1.0.0.jar",
           "url": "ClassCoverPlugin-1.0.0.jar",
           "size": 38382,
-          "sha512": "d4e7933c5e357b9ffdf75665c87313475423cb6ef5209109631d4dcba90dab1d391226b45b09941077eadb7978dc36438537463ebfe57e14c5e4e9bf1961390b",
-          "sha256": "b2372de24b6d096a63470e7c291c5bb1005371000e92637cfb3dbd79d7ee33f9",
-          "sha1": "969e44487d22bcd2a38c84e03c6c374b8150a6de",
-          "md5": "02b0e451b6707d7933bb4a76b2fb6234"
+          "sha512": "e106f55d522572d910c070d5ab906914f997e260d7a7c771cf577f736af4a29db195e95569021f2416ef482cc5bcc23d276ea3f657d6b9b04bde97b1cf6d638d",
+          "sha256": "53c08142754fd86a21449149f07fba4d6f9e50f520461a9fb5cc76a6fb1b2eee",
+          "sha1": "fc7ced7885d114a6c74ba1bda761547d6112cf04",
+          "md5": "8b39e54126ac06b1ecf6a45e4a329025"
         }
       ]
     }
