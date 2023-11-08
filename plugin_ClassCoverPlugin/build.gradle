@@ -1,0 +1,60 @@
+plugins {
+    id 'groovy'
+    id 'maven-publish'
+    id 'java-gradle-plugin'
+}
+
+dependencies{
+    // gradle sdk
+    implementation gradleApi()
+    // groovy sdk
+    implementation localGroovy()
+    implementation 'com.android.tools.build:gradle:4.2.2'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'org.apache.commons:commons-io:1.3.2'
+    implementation 'org.apache.directory.studio:org.apache.commons.codec:1.8'
+}
+
+def pluginName = "ClassCoverPlugin"
+def pluginVersion = "1.0.0"
+
+//def pluginName = "SimplePlugin"
+//def pluginVersion = "1.0.0"
+
+gradlePlugin {
+    plugins {
+        standaloneGradlePlugins {
+//            id = 'test_plugin'
+//            implementationClass = 'com.example.test_plugin.MyPlugin'
+            id = "$pluginName"
+            implementationClass = "com.zy.plugin.${pluginName}"
+        }
+    }
+}
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+
+            // 插件的组ID，建议设置为插件的包名
+            groupId = 'com.zy.plugin'
+            // 插件的名字，后续在引用时会用到
+            artifactId = "${pluginName}"
+            version = "${pluginVersion}"
+            // 组件类型
+            from components.java
+
+            System.out.println("uploadArchives ${groupId}:${artifactId}:${version}")
+        }
+    }
+
+    repositories {
+        maven {
+            // $rootDir 表示你项目的根目录
+            // 这里配置发布到的本地目录
+            url = "$rootDir/repo"
+
+//            url = "https://jitpack.io"
+        }
+    }
+}

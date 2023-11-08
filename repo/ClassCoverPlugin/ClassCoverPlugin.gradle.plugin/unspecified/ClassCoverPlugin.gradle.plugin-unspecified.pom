@@ -8,7 +8,7 @@
   <dependencies>
     <dependency>
       <groupId>Plugins</groupId>
-      <artifactId>plugin</artifactId>
+      <artifactId>plugin_ClassCoverPlugin</artifactId>
       <version>unspecified</version>
     </dependency>
   </dependencies>

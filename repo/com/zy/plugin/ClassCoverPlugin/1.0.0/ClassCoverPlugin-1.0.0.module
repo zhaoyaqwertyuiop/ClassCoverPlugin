@@ -2,7 +2,7 @@
   "formatVersion": "1.1",
   "component": {
     "group": "Plugins",
-    "module": "plugin",
+    "module": "plugin_ClassCoverPlugin",
     "version": "unspecified",
     "attributes": {
       "org.gradle.status": "release"
@@ -11,7 +11,7 @@
   "createdBy": {
     "gradle": {
       "version": "6.7.1",
-      "buildId": "dr4g7yijebenxde57cmmlgrici"
+      "buildId": "2ynhxrhwpvecpmgruvywdprcsm"
     }
   },
   "variants": [
@@ -28,11 +28,11 @@
         {
           "name": "ClassCoverPlugin-1.0.0.jar",
           "url": "ClassCoverPlugin-1.0.0.jar",
-          "size": 38382,
-          "sha512": "1b88ab4b0b094d85a6d793c86609217516a6c3db847f0618af992d648b1d462973cfbe49c44577e1c859e38479cdcd92cf81f814c62726ac8ff53ea9fc981176",
-          "sha256": "bcffa157ad57c90bc0fd4954c21dad0fd0d5c8143d167a3ce01ded042ac6f6b8",
-          "sha1": "478ea51d7f3634acf13977b7d5641f724a7e5c51",
-          "md5": "6d3ebaded0e3da5aff5ff03f5c49a2bb"
+          "size": 16827,
+          "sha512": "d7e4230ec6538eb090f4dfb7baa4b3b43a4830d430d68fdea497095b7bb96d4b82373a940ca1b46da980a4ba8eb2479733faaf35a8119d99a7dc2e87a0624dab",
+          "sha256": "74938113de59c876373f7ca42315efae7e8a49aeb31097379622d740eba6dbad",
+          "sha1": "e971f17a2987e73bb799aa1c6b879c1746d5df63",
+          "md5": "581760a1487edd734acd6ec3f993d75c"
         }
       ]
     },
@@ -79,11 +79,11 @@
         {
           "name": "ClassCoverPlugin-1.0.0.jar",
           "url": "ClassCoverPlugin-1.0.0.jar",
-          "size": 38382,
-          "sha512": "1b88ab4b0b094d85a6d793c86609217516a6c3db847f0618af992d648b1d462973cfbe49c44577e1c859e38479cdcd92cf81f814c62726ac8ff53ea9fc981176",
-          "sha256": "bcffa157ad57c90bc0fd4954c21dad0fd0d5c8143d167a3ce01ded042ac6f6b8",
-          "sha1": "478ea51d7f3634acf13977b7d5641f724a7e5c51",
-          "md5": "6d3ebaded0e3da5aff5ff03f5c49a2bb"
+          "size": 16827,
+          "sha512": "d7e4230ec6538eb090f4dfb7baa4b3b43a4830d430d68fdea497095b7bb96d4b82373a940ca1b46da980a4ba8eb2479733faaf35a8119d99a7dc2e87a0624dab",
+          "sha256": "74938113de59c876373f7ca42315efae7e8a49aeb31097379622d740eba6dbad",
+          "sha1": "e971f17a2987e73bb799aa1c6b879c1746d5df63",
+          "md5": "581760a1487edd734acd6ec3f993d75c"
         }
       ]
     }

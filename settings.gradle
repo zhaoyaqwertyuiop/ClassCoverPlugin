@@ -19,4 +19,5 @@
 
 rootProject.name = "Plugins"
 include ':app'
-include ':plugin'
+include ':plugin_ClassCoverPlugin'
+include ':plugin_SimplePlugin'
