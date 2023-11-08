@@ -14,9 +14,9 @@ buildscript {
         google()
         maven { url 'https://maven.aliyun.com/nexus/content/groups/public/' }
         maven { url 'https://jitpack.io' }
-        maven { url 'https://maven.pkg.github.com/zhaoyaqwertyuiop' }
+//        maven { url 'https://maven.pkg.github.com/zhaoyaqwertyuiop' }
         mavenCentral()
-        mavenLocal() // 本地仓库
+//        mavenLocal() // 本地仓库
 //        maven { url "$rootDir/repo" }
 //        maven { url uri("$rootDir/repo") }
     }
@@ -35,9 +35,9 @@ allprojects {
         google()
         maven { url 'https://maven.aliyun.com/nexus/content/groups/public/' }
         maven { url 'https://jitpack.io' }
-        maven { url 'https://maven.pkg.github.com/457641462' }
+//        maven { url 'https://maven.pkg.github.com/457641462' }
         mavenCentral()
-        mavenLocal() // 本地仓库
+//        mavenLocal() // 本地仓库
 //        maven { url "$rootDir/repo" }
 //        maven { url uri("$rootDir/repo") }
 //        maven { url "file://$rootDir/repo" }

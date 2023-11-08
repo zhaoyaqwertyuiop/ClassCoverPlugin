@@ -32,7 +32,7 @@ import java.util.List;
  *
  * @author Philipp Jahoda
  */
-public abstract class Utils {
+public abstract class Utils1 {
 
     private static DisplayMetrics mMetrics;
     private static int mMinimumFlingVelocity = 50;
