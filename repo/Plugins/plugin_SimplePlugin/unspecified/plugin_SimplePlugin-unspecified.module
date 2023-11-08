@@ -26,8 +26,8 @@
       },
       "files": [
         {
-          "name": "SimplePlugin-1.0.0.jar",
-          "url": "SimplePlugin-1.0.0.jar",
+          "name": "plugin_SimplePlugin-unspecified.jar",
+          "url": "plugin_SimplePlugin-unspecified.jar",
           "size": 23313,
           "sha512": "953de14abe43326a8917cca6b459502cb148e84a97039b2882fbc6b30d2e49070fae5678e2572a9dd940246c658d7434bba6394f36ff6bffa7d3cd479d1a593a",
           "sha256": "fae33876516a9b4ed27bad58c4de3cbcec497162e47d195b0ffaf1a9cc1d545b",
@@ -56,8 +56,8 @@
       ],
       "files": [
         {
-          "name": "SimplePlugin-1.0.0.jar",
-          "url": "SimplePlugin-1.0.0.jar",
+          "name": "plugin_SimplePlugin-unspecified.jar",
+          "url": "plugin_SimplePlugin-unspecified.jar",
           "size": 23313,
           "sha512": "953de14abe43326a8917cca6b459502cb148e84a97039b2882fbc6b30d2e49070fae5678e2572a9dd940246c658d7434bba6394f36ff6bffa7d3cd479d1a593a",
           "sha256": "fae33876516a9b4ed27bad58c4de3cbcec497162e47d195b0ffaf1a9cc1d545b",
