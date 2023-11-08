@@ -2,8 +2,8 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
 //    id 'test_plugin'
-    id 'ClassCoverPlugin'
-    id 'SimplePlugin'
+//    id 'ClassCoverPlugin'
+//    id 'SimplePlugin'
 }
 
 android {
