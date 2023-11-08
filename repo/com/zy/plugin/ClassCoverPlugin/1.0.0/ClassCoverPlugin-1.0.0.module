@@ -1,0 +1,91 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "Plugins",
+    "module": "plugin",
+    "version": "unspecified",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.7.1",
+      "buildId": "np6rk7k6fvde7nrkhy432i2epu"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "ClassCoverPlugin-1.0.0.jar",
+          "url": "ClassCoverPlugin-1.0.0.jar",
+          "size": 38382,
+          "sha512": "c97f676d7813ea36d05308010593ef44a4045edc0ed1d00708e56947355edc7f84f300fd09a81c4ac4005cfca074ec2a8af0b1eb8f03ae12c30ff1455550e1ce",
+          "sha256": "863d577e214223053420e8a47c4e6caf9b8a656e4fcfdeb470bf13fd6037e952",
+          "sha1": "add3618488157a04b37d716d25ce6c85aa4d0ca0",
+          "md5": "408f3d1d54f42f4cd5e0550c80ed8842"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.android.tools.build",
+          "module": "gradle",
+          "version": {
+            "requires": "4.2.2"
+          }
+        },
+        {
+          "group": "com.google.code.gson",
+          "module": "gson",
+          "version": {
+            "requires": "2.8.5"
+          }
+        },
+        {
+          "group": "org.apache.commons",
+          "module": "commons-io",
+          "version": {
+            "requires": "1.3.2"
+          }
+        },
+        {
+          "group": "org.apache.directory.studio",
+          "module": "org.apache.commons.codec",
+          "version": {
+            "requires": "1.8"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "ClassCoverPlugin-1.0.0.jar",
+          "url": "ClassCoverPlugin-1.0.0.jar",
+          "size": 38382,
+          "sha512": "c97f676d7813ea36d05308010593ef44a4045edc0ed1d00708e56947355edc7f84f300fd09a81c4ac4005cfca074ec2a8af0b1eb8f03ae12c30ff1455550e1ce",
+          "sha256": "863d577e214223053420e8a47c4e6caf9b8a656e4fcfdeb470bf13fd6037e952",
+          "sha1": "add3618488157a04b37d716d25ce6c85aa4d0ca0",
+          "md5": "408f3d1d54f42f4cd5e0550c80ed8842"
+        }
+      ]
+    }
+  ]
+}

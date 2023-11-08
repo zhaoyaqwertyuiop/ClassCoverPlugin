@@ -14,6 +14,7 @@ buildscript {
         google()
         maven { url 'https://maven.aliyun.com/nexus/content/groups/public/' }
         maven { url 'https://jitpack.io' }
+        maven { url 'https://maven.pkg.github.com/zhaoyaqwertyuiop' }
         mavenCentral()
         mavenLocal() // 本地仓库
 //        maven { url "$rootDir/repo" }
@@ -25,6 +26,7 @@ buildscript {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
 //        classpath "com.zy.plugin:ClassCoverPlugin:1.0.3" // 这里是本地插件
 //        classpath "com.zy.plugin:SimplePlugin:1.0.0" // 这里是本地插件
+//        classpath "com.github.zhaoyaqwertyuiop:Plugins:1.0.0"
     }
 }
 
@@ -33,6 +35,7 @@ allprojects {
         google()
         maven { url 'https://maven.aliyun.com/nexus/content/groups/public/' }
         maven { url 'https://jitpack.io' }
+        maven { url 'https://maven.pkg.github.com/457641462' }
         mavenCentral()
         mavenLocal() // 本地仓库
 //        maven { url "$rootDir/repo" }

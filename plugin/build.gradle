@@ -15,40 +15,46 @@ dependencies{
     implementation 'org.apache.directory.studio:org.apache.commons.codec:1.8'
 }
 
+def pluginName = "ClassCoverPlugin"
+def pluginVersion = "1.0.0"
+
+//def pluginName = "SimplePlugin"
+//def pluginVersion = "1.0.0"
+
 gradlePlugin {
     plugins {
         standaloneGradlePlugins {
 //            id = 'test_plugin'
 //            implementationClass = 'com.example.test_plugin.MyPlugin'
-//            id = 'ClassCoverPlugin'
-//            implementationClass = 'com.zy.plugin.ClassCoverPlugin'
-            id = 'SimplePlugin'
-            implementationClass = 'com.zy.plugin.SimplePlugin'
+            id = "$pluginName"
+            implementationClass = "com.zy.plugin.${pluginName}"
         }
     }
 }
 
 publishing {
-    repositories {
-        maven {
-            // $rootDir 表示你项目的根目录
-            // 这里配置发布到的本地目录
-            url = "$rootDir/repo"
-        }
-    }
-
     publications {
         maven(MavenPublication) {
 
             // 插件的组ID，建议设置为插件的包名
             groupId = 'com.zy.plugin'
             // 插件的名字，后续在引用时会用到
-            artifactId = 'SimplePlugin'
-            version = '1.0.0'
+            artifactId = "${pluginName}"
+            version = "${pluginVersion}"
             // 组件类型
             from components.java
 
             System.out.println("uploadArchives ${groupId}:${artifactId}:${version}")
+        }
+    }
+
+    repositories {
+        maven {
+            // $rootDir 表示你项目的根目录
+            // 这里配置发布到的本地目录
+            url = "$rootDir/repo"
+
+//            url = "https://jitpack.io"
         }
     }
 }
